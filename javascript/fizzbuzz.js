@@ -15,23 +15,23 @@ function evaluate(n) {
 
 $(document).ready(function() {
 
-$(".numbers").append("<p>Below are the numbers...</p>");
-
- var fizzBuzz = [];
+  var numberInput = prompt("Enter a number", ""); 
   
-    for (var n = 1; n <= 100; n++) {
+  // var n = parseInt(numberInput);
+  // evaluate(n);
+
+  var fizzBuzz = [];
+  
+    for (var n = parseInt(numberInput); n >= 1; n--) {
       fizzBuzz.push(n);
-      //console.log(fizzBuzz);
     }
   
-  //console.log(fizzBuzz);
-  
   fizzBuzz = fizzBuzz.map(evaluate);
-  //console.log(fizzBuzz);
+
   function PrintValue (value) {
     $(".numbers").append("<p>" + value + "</p>");
   }
 
   fizzBuzz.forEach(PrintValue);
-  
+
 });
