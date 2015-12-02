@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   var fizzBuzz = [];
   
-    for (var n = parseInt(numberInput); n >= 1; n--) {
+    for (var n = parseInt(numberInput, 10); n >= 1; n--) {
       fizzBuzz.push(n);
     }
   

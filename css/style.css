@@ -1,0 +1,10 @@
+div.numbers {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 5px; /* Firefox */
+  column-gap: 5px;
+  -webkit-column-width: 20px; /* Chrome, Safari, Opera */
+  column-width: 120px;
+}
