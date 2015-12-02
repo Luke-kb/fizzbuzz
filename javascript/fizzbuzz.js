@@ -16,14 +16,11 @@ function evaluate(n) {
 $(document).ready(function() {
 
   var numberInput = prompt("Enter a number", ""); 
-  
-  // var n = parseInt(numberInput);
-  // evaluate(n);
 
   var fizzBuzz = [];
   
-    for (var n = parseInt(numberInput, 10); n >= 1; n--) {
-      fizzBuzz.push(n);
+    for (n = parseInt(numberInput, 10); n >= 1; n--) {
+      fizzBuzz.unshift(n);
     }
   
   fizzBuzz = fizzBuzz.map(evaluate);
